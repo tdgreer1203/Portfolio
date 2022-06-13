@@ -4,6 +4,8 @@
     --tertiary-color: white;
 }
 
+
+/*-----Universal and Element Styles-----*/
 * {
     margin: 0px;
     padding: 0px;
@@ -12,6 +14,20 @@
 
 section {
     padding: 60px;
+}
+
+/*-----Utility Styles-----*/
+.section-heading {
+    flex: 1 30%;
+    border-right: 5px solid var(--secondary-color);
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.section-heading h2 {
+    font-size: 70px;
 }
 
 /*-----Header Section-----*/
@@ -106,30 +122,26 @@ header a {
     justify-content: center;
 }
 
-.section-heading {
-    flex: 1 30%;
-    border-right: 5px solid var(--secondary-color);
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    padding-left: 50px;
-}
-
-.section-heading h2 {
-    font-size: 70px;
-}
-
-.section-content {
+.about-content {
     flex: 1 70%;
 }
 
-.section-content p {
+.about-content p {
     line-height: 1.5;
     font-size: 20px;
 }
 
-.section-content p:not(:first-child) {
+.about-content p:not(:first-child) {
     margin-top: 20px;
 }
 
 
+/*-----Work Section-----*/
+.work {
+    display: flex;
+    justify-content: center;
+}
+
+.work-content {
+    flex: 1 70%;
+}

@@ -18,7 +18,7 @@ section {
 
 /*-----Utility Styles-----*/
 .section-heading {
-    flex: 1 30%;
+    flex: 1 25%;
     border-right: 5px solid var(--secondary-color);
     margin-right: 50px;
     display: flex;
@@ -123,7 +123,7 @@ header a {
 }
 
 .about-content {
-    flex: 1 70%;
+    flex: 1 75%;
 }
 
 .about-content p {
@@ -140,8 +140,48 @@ header a {
 .work {
     display: flex;
     justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.work .section-heading {
+    border-right: 5px solid var(--tertiary-color);
 }
 
 .work-content {
-    flex: 1 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 75%;
+}
+
+.work-content>:first-child {
+    flex: 1 100%;
+    height: 500px;
+}
+
+.work-content>:not(:first-child) {
+    flex: 1 40%;
+    height: 200px;
+}
+
+.work-tile {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    border: 3px solid var(--tertiary-color);
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+.tile-title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--tertiary-color);
+    padding: 15px;
+}
+
+.tile-title h3 {
+    color: var(--primary-color);
+    font-size: 24px;
 }

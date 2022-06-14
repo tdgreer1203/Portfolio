@@ -16,6 +16,10 @@ section {
     padding: 60px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*-----Utility Styles-----*/
 .section-heading {
     flex: 1 25%;
@@ -39,10 +43,6 @@ section {
     background-size: cover;
 }
 
-.switch-to-column {
-    
-}
-
 /*-----Header Section-----*/
 .header {
     padding: 20px 40px;
@@ -50,10 +50,6 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--primary-color);
-}
-
-header a {
-    text-decoration: none;
 }
 
 .header a h1 {
@@ -168,10 +164,6 @@ header a {
     flex: 1 75%;
 }
 
-.work-content a {
-    text-decoration: none;
-}
-
 .work-content>:first-child {
     flex: 1 100%;
 }
@@ -269,7 +261,6 @@ header a {
 /*-----Media Queries-----*/
 @media only screen and (max-width: 1200px) {
     .contact-me {
-        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;   
     }
@@ -294,7 +285,6 @@ header a {
     }
 
     .about-me {
-        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -306,7 +296,6 @@ header a {
     }
 
     .work {
-        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -319,6 +308,10 @@ header a {
 }
 
 @media only screen and (max-width: 812px) {
+    section {
+        padding: 60px 10px;
+    }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -327,7 +320,7 @@ header a {
 
     nav {
         display: flex;
-        width: 75%;
+        width: 100%;
     }
 
     .header nav ul {
@@ -357,14 +350,6 @@ header a {
 }
 
 @media only screen and (max-width: 500px) {
-    section {
-        padding: 60px 10px;
-    }
-
-    nav {
-        width: 100%;
-    }
-
     .work-content {
         display: flex;
         flex-direction: column;

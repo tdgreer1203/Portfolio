@@ -185,3 +185,34 @@ header a {
     color: var(--primary-color);
     font-size: 24px;
 }
+
+#fanpage {
+    background-image: url(../img/fanpage.png);
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+}
+
+#runbuddy {
+    background-image: url(../img/runbuddy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#refactoring {
+    background-image: url(../img/refactoring.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#frogger {
+    background-image: url(../img/frogger.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hitthekeys {
+    background-image: url(../img/hitthekeys.jpg);
+    background-position: center;
+    background-size: cover;
+}

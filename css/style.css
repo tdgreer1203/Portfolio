@@ -24,7 +24,6 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-left: 50px;
 }
 
 .section-heading h2 {
@@ -33,6 +32,15 @@ section {
 
 .small-tile {
     height: 180px;
+}
+
+.align-background {
+    background-position: center;
+    background-size: cover;
+}
+
+.switch-to-column {
+    
 }
 
 /*-----Header Section-----*/
@@ -196,8 +204,6 @@ header a {
 
 #fanpage {
     background-image: url(../img/fanpage.png);
-    background-position: center;
-    background-size: cover;
     height: 480px;
 }
 
@@ -207,8 +213,6 @@ header a {
 
 #runbuddy {
     background-image: url(../img/runbuddy.png);
-    background-position: center;
-    background-size: cover;
 }
 
 #runbuddy:hover {
@@ -217,8 +221,6 @@ header a {
 
 #refactoring {
     background-image: url(../img/refactoring.png);
-    background-position: center;
-    background-size: cover;
 }
 
 #refactoring:hover {
@@ -227,8 +229,6 @@ header a {
 
 #frogger {
     background-image: url(../img/frogger.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 #frogger:hover {
@@ -237,8 +237,6 @@ header a {
 
 #hitthekeys {
     background-image: url(../img/hitthekeys.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 #hitthekeys:hover {
@@ -265,4 +263,111 @@ header a {
 
 .contact-info a {
     color: var(--primary-color);
+}
+
+
+/*-----Media Queries-----*/
+@media only screen and (max-width: 1200px) {
+    .contact-me {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact-me .section-heading {
+        border-right: none;
+        border-bottom: 5px solid var(--secondary-color);
+        margin: 0 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .section-heading {
+        border-right: none;
+        border-bottom: 5px solid var(--secondary-color);
+        margin: 0 0 30px 0;
+    }
+
+    .work {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work .section-heading {
+        border-right: none;
+        border-bottom: 5px solid var(--tertiary-color);
+        margin: 0 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        width: 75%;
+    }
+
+    .header nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+    }
+
+    .header nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .header a h1 {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info h3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section {
+        padding: 60px 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .work-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }

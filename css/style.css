@@ -23,11 +23,16 @@ section {
     margin-right: 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-left: 50px;
 }
 
 .section-heading h2 {
     font-size: 70px;
+}
+
+.small-tile {
+    height: 180px;
 }
 
 /*-----Header Section-----*/
@@ -155,9 +160,12 @@ header a {
     flex: 1 75%;
 }
 
+.work-content a {
+    text-decoration: none;
+}
+
 .work-content>:first-child {
     flex: 1 100%;
-    height: 500px;
 }
 
 .work-content>:not(:first-child) {
@@ -172,6 +180,10 @@ header a {
     border: 3px solid var(--tertiary-color);
     padding-bottom: 20px;
     margin: 10px;
+}
+
+.work-tile:hover {
+    opacity: 0.8;
 }
 
 .tile-title {
@@ -215,4 +227,15 @@ header a {
     background-image: url(../img/hitthekeys.jpg);
     background-position: center;
     background-size: cover;
+}
+
+
+/*-----Contact Info-----*/
+.contact-me {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1 75%;
 }

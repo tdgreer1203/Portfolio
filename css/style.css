@@ -219,12 +219,12 @@ a {
     background-image: url(../img/refactoringhover.jpg);
 }
 
-#frogger {
-    background-image: url(../img/frogger.jpg);
+#taskinator {
+    background-image: url(../img/taskinator.jpg);
 }
 
-#frogger:hover {
-    background-image: url(../img/froggerhover.jpg);
+#taskinator:hover {
+    background-image: url(../img/taskinatorhover.jpg);
 }
 
 #hitthekeys {

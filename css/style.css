@@ -173,10 +173,6 @@ a {
     height: 200px;
 }
 
-.work-content>:last-child {
-    flex: 1 100%;
-}
-
 .work-tile {
     display: flex;
     justify-content: start;
@@ -277,6 +273,14 @@ a {
 
 #taskmaster:hover {
     background-image: url(../img/taskmaster-over.jpg);
+}
+
+#gititdone {
+    background-image: url(../img/gititdone.jpg);
+}
+
+#gititdone:hover {
+    background-image: url(../img/gititdone-over.jpg);
 }
 
 

@@ -173,6 +173,10 @@ a {
     height: 200px;
 }
 
+.work-content>:last-child {
+    flex: 1 100%;
+}
+
 .work-tile {
     display: flex;
     justify-content: start;
@@ -194,13 +198,13 @@ a {
     font-size: 24px;
 }
 
-#fanpage {
-    background-image: url(../img/fanpage.png);
+#recipe {
+    background-image: url(../img/random-recipes.jpg);
     height: 480px;
 }
 
-#fanpage:hover {
-    background-image: url(../img/fanpagehover.jpg);
+#recipe:hover {
+    background-image: url(../img/random-recipes-over.jpg);
 }
 
 #runbuddy {
@@ -211,12 +215,12 @@ a {
     background-image: url(../img/runbuddyhover.jpg);
 }
 
-#refactoring {
-    background-image: url(../img/refactoring.png);
+#readme {
+    background-image: url(../img/readmegenerator.jpg);
 }
 
-#refactoring:hover {
-    background-image: url(../img/refactoringhover.jpg);
+#readme:hover {
+    background-image: url(../img/readme-over.jpg);
 }
 
 #taskinator {
@@ -227,12 +231,52 @@ a {
     background-image: url(../img/taskinatorhover.jpg);
 }
 
-#hitthekeys {
-    background-image: url(../img/hitthekeys.jpg);
+#note-taker {
+    background-image: url(../img/notetaker.jpg);
 }
 
-#hitthekeys:hover {
-    background-image: url(../img/hitthekeyshover.jpg);
+#note-taker:hover {
+    background-image: url(../img/notetaker-over.jpg);
+}
+
+#work-day {
+    background-image: url(../img/workday.jpg);
+}
+
+#work-day:hover {
+    background-image: url(../img/workday-over.jpg);
+}
+
+#weather-dashboard {
+    background-image: url(../img/weather.jpg);
+}
+
+#weather-dashboard:hover {
+    background-image: url(../img/weather-over.jpg);
+}
+
+#password {
+    background-image: url(../img/password.jpg);
+}
+
+#password:hover {
+    background-image: url(../img/password-over.jpg);
+}
+
+#quiz {
+    background-image: url(../img/quiz.jpg);
+}
+
+#quiz:hover {
+    background-image: url(../img/quiz-over.jpg);
+}
+
+#taskmaster {
+    background-image: url(../img/taskmaster.jpg);
+}
+
+#taskmaster:hover {
+    background-image: url(../img/taskmaster-over.jpg);
 }
 
 
